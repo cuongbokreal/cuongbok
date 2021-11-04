@@ -131,7 +131,8 @@
           box-sizing: border-box;
         }
         .profile {
-          position: relative;
+          max-width:max-content;
+          display: block;
           background: var(--backgroundColor);
           color: var(--foregroundColor);
           box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
@@ -139,9 +140,12 @@
           transition: 0.2s ease;
         }
         .profile__image img {
+          display: block;
           width: 100%;
+          max-width: 100%;
           height: 100%;
           object-fit: cover;
+          vertical-align: middle;
         }
         .profile a:hover {
           top: 0;
@@ -154,11 +158,12 @@
           background: var(--primaryShade5);
         }
         .profile-bigimg {
+          position: relative;
           display: grid;
           grid-template-columns: repeat(3, 1fr);
           grid-template-rows: 400px auto 0px;
           border-radius: 10px;
-          width: 650px;
+          width: 100%;
           overflow: hidden;
           margin: auto;
         }
@@ -187,11 +192,15 @@
         }
 
         .ny-cu {
+          position:relative;
           display: grid;
-          grid-gap: 30px;
+          grid-gap: 15px;
           grid-template-columns: repeat(6, auto);
           grid-template-rows: repeat(4, auto);
-          width: 550px;
+          flex-direction: column;
+          width: 100%;
+          height:100%;
+          max-width: max-content;
           justify-content: center;
         }        
      </style>
@@ -204,7 +213,7 @@
       <div class="slide">
           <div class="ny-cu">
             <div class="profile profile-bigimg">
-              <div class="profile__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/dog.png" alt="Doggo"/></div>
+              <div class="profile__image"><img src="https://i.pinimg.com/236x/ce/64/8d/ce648d33d6b765eb1044a8385da6fed6.jpg" alt="Doggo"/></div>
               <div class="profile__info">
                 <h3>Doggo Dogg</h3>
                 <p class="profile__info__extra">A very good boi that loves playing fetch and ice-cream! Gentle with everyone. Scared of the rain.</p>
@@ -215,7 +224,7 @@
       <div class="slide">
           <div class="ny-cu">
             <div class="profile profile-bigimg">
-              <div class="profile__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/dog.png" alt="Doggo"/></div>
+              <div class="profile__image"><img src="https://i.pinimg.com/236x/ce/64/8d/ce648d33d6b765eb1044a8385da6fed6.jpg" alt="Doggo"/></div>
               <div class="profile__info">
                 <h3>Doggo Dogg</h3>
                 <p class="profile__info__extra">A very good boi that loves playing fetch and ice-cream! Gentle with everyone. Scared of the rain.</p>
@@ -226,7 +235,7 @@
       <div class="slide">
           <div class="ny-cu">
             <div class="profile profile-bigimg">
-              <div class="profile__image"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/dog.png" alt="Doggo"/></div>
+              <div class="profile__image"><img src="https://i.pinimg.com/236x/ce/64/8d/ce648d33d6b765eb1044a8385da6fed6.jpg" alt="Doggo"/></div>
               <div class="profile__info">
                 <h3>Doggo Dogg</h3>
                 <p class="profile__info__extra">A very good boi that loves playing fetch and ice-cream! Gentle with everyone. Scared of the rain.</p>
@@ -242,7 +251,7 @@
             slidesToShow: 2,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 1500,
+            autoplaySpeed: 5000,
             arrows: false,
             dots: false,
             pauseOnHover: false,
