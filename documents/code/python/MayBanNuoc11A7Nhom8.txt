@@ -1,3 +1,4 @@
+#2021 Cuongbok
 #Máy bán nước tự động nhóm 8 (11A7)
 #đầu tiên có array data sản phẩm
 dataProduct = [
@@ -77,3 +78,4 @@ if inputPrice > 4500:#kiểm soát số tiền nhập vào, lớn hơn giá sp n
     xuly()
 else:
     print('Ban khong co du tien! Vui long nhap them')
+#2021 Cuongbok
