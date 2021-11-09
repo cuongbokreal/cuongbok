@@ -75,7 +75,7 @@ if inputPrice > 4500:#kiểm soát số tiền nhập vào, lớn hơn giá sp n
             #inputPrice = excessCash
         else:
             fail()
-    xuly()
+    xuly() #hoàn thành dữ liệu thì chạy def xuly() để xem xét success hay fail
 else:
     print('Bạn không có đủ tiền, vui lòng nhập thêm!') #đoạn này vòi thêm tiền :))
 #2021 Cuongbok
