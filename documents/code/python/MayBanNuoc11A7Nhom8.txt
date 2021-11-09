@@ -15,17 +15,17 @@ dataProduct = [
         {"id":"03",
          "name":"Bimbim",
          "price":5000,
-         "unit":"goi"
+         "unit":"gói"
         },
         {"id":"04",
          "name":"Milo",
          "price":7000,
-         "unit":"hop"
+         "unit":"hộp"
         },
         {"id":"05",
          "name":"Sua chua",
          "price":4500,
-         "unit":"hop"
+         "unit":"hộp"
         },  
     ]
 #in sản phẩm ra
