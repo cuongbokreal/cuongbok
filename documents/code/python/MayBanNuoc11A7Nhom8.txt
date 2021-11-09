@@ -33,7 +33,7 @@ print("""Xin chào, đây là máy bán nước tự động!
 Dưới đây là danh sách sản phẩm của chúng tôi
 """)
 def listProduct():
-    for i in dataProduct:
+    for i in dataProduct: #dùng for get toàn bộ data để in ra, """ giúp viết nhiều dòng.
         print(f"""Mã sản phẩm: {i["id"]}
 Tên sản phẩm: {i["unit"]} {i["name"]}
 Giá: {i["price"]} VND
