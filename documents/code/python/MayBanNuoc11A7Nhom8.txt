@@ -77,5 +77,5 @@ if inputPrice > 4500:#kiểm soát số tiền nhập vào, lớn hơn giá sp n
             fail()
     xuly()
 else:
-    print('Ban khong co du tien! Vui long nhap them')
+    print('Bạn không có đủ tiền, vui lòng nhập thêm!') #đoạn này vòi thêm tiền :))
 #2021 Cuongbok
