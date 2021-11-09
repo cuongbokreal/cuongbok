@@ -61,7 +61,7 @@ if inputPrice > 4500:#kiểm soát số tiền nhập vào, lớn hơn giá sp n
         alertAdd = ""
         for i in dataProduct:
             if inputPrice < i["price"]:
-                alertAdd =  f'Không có sản phẩm gợi ý'
+                alertAdd =  f'Không có sản phẩm gợi ý' #đoạn này bị thừa, vì đã kiểm soát số tiền nhập vào rồi, nên không cần if lần nữa.
         alertAdd = ""
         for i in dataProduct:
             if inputPrice >= i["price"]:
