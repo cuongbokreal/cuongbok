@@ -23,7 +23,7 @@ dataProduct = [
          "unit":"hộp"
         },
         {"id":"05",
-         "name":"Sua chua",
+         "name":"Sữa chua",
          "price":4500,
          "unit":"hộp"
         },  
