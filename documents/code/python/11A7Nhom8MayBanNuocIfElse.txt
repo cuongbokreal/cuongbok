@@ -1,0 +1,65 @@
+#Máy Bán Nước Tự Động Nhóm 8 11A7
+print('Xin chào, đây là máy bán nước tự động của nhóm 8 lớp 11A7!\nDưới đây là danh sách sản phẩm của chúng tôi:\n')
+print('Mã sản phẩm: 01, lon Coca, Giá: 10000 VND')
+print('Mã sản phẩm: 02, chai Lavie, Giá: 6000 VND')
+print('Mã sản phẩm: 03, gói Bimbim, Giá: 5000 VND')
+print('Mã sản phẩm: 04, hộp Milo, Giá: 7000 VND')
+print('Mã sản phẩm: 05, hộp Sua chua, Giá: 4500 VND')
+soTien = int(input('Xin mời nhập tiền:'))
+lonCoca = 10000
+chaiLavie = 6000
+goiBimbim = 5000
+hopMilo = 7000
+hopSuachua = 45000
+if soTien >= 4500 and soTien%1000 == 0:
+    maSp = int(input('Mã sản phẩm:'))
+    soLuong= int(input('Số lượng:'))
+    if maSp == 1:
+        if soTien >= lonCoca:
+            tienThua = "0"
+            if soTien - (soLuong*lonCoca)>=0:
+                tienThua = soTien - (soLuong*lonCoca)
+                print('Mời bạn nhận', soTien//(soLuong*lonCoca), 'lon Coca và tiền thừa', tienThua,'VND')
+            else:
+                print('Bạn không đủ tiền mua Coca, hãy mua sản phẩm khác!')
+    elif maSp == 2:
+        if soTien >= chaiLavie:
+            tienThua = "0"
+            if soTien - (soLuong*chaiLavie)>=0:
+                tienThua = soTien - (soLuong*chaiLavie)
+                print('Mời bạn nhận', soTien//(soLuong*chaiLavie), 'chai Lavie và tiền thừa', tienThua,'VND')
+            else:
+                print('Bạn không đủ tiền mua Lavie, hãy mua sản phẩm khác!')
+    elif maSp == 3:
+        if soTien >= goiBimbim:
+            tienThua = "0"
+            if soTien - (soLuong*goiBimbim)>=0:
+                tienThua = soTien - (soLuong*goiBimbim)
+                print('Mời bạn nhận', soTien//(soLuong*goiBimbim), 'gói Bimbim và tiền thừa', tienThua,'VND')
+            else:
+                print('Bạn không đủ tiền mua Bimbim, hãy mua sản phẩm khác!')
+    elif maSp == 4:
+        if soTien >= hopMilo:
+            tienThua = "0"
+            if soTien - (soLuong*hopMilo)>=0:
+                tienThua = soTien - (soLuong*hopMilo)
+                print('Mời bạn nhận', soTien//(soLuong*hopMilo), 'hộp Milo và tiền thừa', tienThua,'VND')
+            else:
+                print('Bạn không đủ tiền mua Milo, hãy mua sản phẩm khác!')
+    elif maSp == 5:
+        if soTien >= hopSuachua:
+            tienThua = "0"
+            if soTien - (soLuong*hopSuachua)>=0:
+                tienThua = soTien - (soLuong*hopSuachua)
+                print('Mời bạn nhận', soTien//(soLuong*hopSuachua), 'hộp Sữa chua và tiền thừa', tienThua,'VND')
+            else:
+                print('Bạn không đủ tiền mua Sữa chua, hãy mua sản phẩm khác!')
+else:
+    print('Bạn không có đủ tiền, hoặc sai mệnh giá! Vui lòng nhập lại')
+
+import base64
+coded = f'''MjAyMSBieSBDdW9uZ2Jvaw=='''
+print(f'''
+{base64.b64decode(coded)}''')
+#làm cho vui
+#2021 Cuongbok    
