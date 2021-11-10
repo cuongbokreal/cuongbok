@@ -41,7 +41,7 @@ Giá: {i["price"]} VND
 listProduct()
 #get input    
 inputPrice = int(input('Xin mời nhập tiền:'))
-if inputPrice > 4500:#kiểm soát số tiền nhập vào, lớn hơn giá sp nhỏ nhất
+if inputPrice >= 4500:#kiểm soát số tiền nhập vào, lớn hơn giá sp nhỏ nhất
     inputId = int(input('Mã sản phẩm:'))
     inputQuantity = int(input(f'Nhập số {dataProduct[(inputId-1)]["unit"]} {dataProduct[(inputId-1)]["name"]} muốn mua:'))
     outputName = dataProduct[(inputId-1)]["name"] #get ten sp bang id
