@@ -1,0 +1,32 @@
+#Cuongbokdeptrai ông chùm Ctrl
+N = int(input('Nhập số người chơi (N):'))
+M = int(input('Nhập số lượt phát đồng xu (M):'))
+def xuly(L, R, turn):
+    print(f'Ở lượt {turn+1}, phát {R} đồng xu cho người từ {L} đến {R}')
+    dataPointPlayer = []
+    listPointPlayer = []
+    for i in range(N):
+        if L > R:
+            if i in range(L,N) or i in range(0,R):
+                dataPointPlayer.append({"id":i+1,"point": R})
+                listPointPlayer.append(int(dataPointPlayer[i]["point"]))
+            else:
+                dataPointPlayer.append({"id":i+1,"point": 0})
+                listPointPlayer.append(0)
+        if R > L:
+            if i in range(R,N) or i in range(0,L):
+                dataPointPlayer.append({"id":i+1,"point": R})
+                listPointPlayer.append(int(dataPointPlayer[i]["point"]))
+            else:
+                dataPointPlayer.append({"id":i+1,"point": 0})
+                listPointPlayer.append(0)
+    print(dataPointPlayer)
+    
+for i in range(M):
+    print(f'Lượt {i+1}/{M}:')
+    L = int(input('Nhập L:'))
+    R = int(input('Nhập R:'))
+    xuly(L, R, i)
+    
+    
+    
