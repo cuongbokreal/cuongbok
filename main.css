@@ -1,169 +1,124 @@
 * {
-  margin: 0;
+  box-sizing: border-box;
   padding: 0;
-}
-
-html,
-body {
-  height: 100%;
-  /* for touch screen */
-  touch-action: none;
-}
-
-body {
-  overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #111;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-#drag-container,
-#spin-container {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: rotateX(-10deg);
-  transform: rotateX(-10deg);
-  z-index: 100;
-}
-
-#drag-container img,
-#drag-container video {
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  position: absolute;
-  left: 0;
-  top: 0;
-  max-width: 120%;
-  max-height: 120%;
-  line-height: 200px;
-  font-size: 50px;
-  text-align: center;
-  -webkit-box-shadow: 0 0 8px #fff;
-  box-shadow: 0 0 8px #fff;
-  -webkit-box-reflect: below 10px
-    linear-gradient(transparent, transparent, #0005);
-}
-
-#drag-container img:hover,
-#drag-container video:hover {
-  -webkit-box-shadow: 0 0 15px #fffd;
-  box-shadow: 0 0 15px #fffd;
-  -webkit-box-reflect: below 10px
-    linear-gradient(transparent, transparent, #0007);
-}
-
-#drag-container p {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotateX(90deg);
-  transform: translate(-50%, -50%) rotateX(90deg);
-  color: rgb(0, 195, 255);
-  animation: fadein ease 15s;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-#ground {
-  width: 900px;
-  height: 900px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotateX(90deg);
-  transform: translate(-50%, -50%) rotateX(90deg);
-  background: -webkit-radial-gradient(
-    center center,
-    farthest-side,
-    #9993,
-    transparent
-  );
-}
-
-#music-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-}
-
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
-  to {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
-  }
-}
-
-@keyframes spin {
-  from {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
-  to {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
-  }
-}
-@-webkit-keyframes spinRevert {
-  from {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
-  }
-  to {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
-}
-@keyframes spinRevert {
-  from {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
-  }
-  to {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
-}
-
-#canvas {
-  background-color: transparent;
-  color: transparent;
   margin: 0;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  width: 100vw;
 }
 
-#canva {
+p, h1, h2, h3, h4 {
+  display: inline-block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+body {
+  background-color: rgb(255, 151, 186);
+  font-family: sans-serif;
+}
+
+.outer_wrapper {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
-p {
-  font-family: "Dancing Script", cursive;
-  font-family: "Rampart One", cursive;
-  font-size: 4vw;
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-width: 2000px;
+  max-height: 1000px;
+  z-index: -9999;
 }
+
+.panda_wrapper {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.panda_wrapper svg { fill: rgb(173, 1, 87); }
+
+.panda_wrapper.stop { transition: 0 !important; }
+
+.panda_inner_wrapper {
+  height: 100%;
+  width: 100%;
+  transition: 0;
+}
+
+.facing_upleft,
+.facing_left,
+.facing_downleft { 
+  transform: scale(-1 , 1);
+}
+
+.panda_sprite {
+  position: absolute;
+  height: 500px;
+  width: calc(13 * 100px);
+  pointer-events: none;
+}
+
+.panda_sprite img {
+  height: 100px;
+  width: 100%;
+  display: block;
+}
+
+.hit_wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.hit_area {
+  height: 50px;
+  width: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.panda_wrapper.stop .hit_area {
+  margin-top: 10px;
+  height: 40px;
+}
+
+/* need to flip because the parent divs are flipped */
+.facing_upleft .hit_area,
+.facing_left .hit_area,
+.facing_downleft .hit_area {
+  transform: scale(-1 , 1);
+}
+
+.hit_corner {
+  height: 50%;
+  width: 50%;
+  opacity: 0.1;
+}
+
+.sign {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  bottom: 10px;
+  right: 10px;
+  font-size: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
