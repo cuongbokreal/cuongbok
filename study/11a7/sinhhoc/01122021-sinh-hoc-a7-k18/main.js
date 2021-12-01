@@ -1,27 +1,23 @@
 var dataInner = [
   {"id":"01",
    "name":"Quách Duy An",
-   "html":`<img src="https://i.imgur.com/s5fZOzm.jpg" /><img src="https://i.imgur.com/qir0V1l.jpg" />`,
-  },
-  {"id":"02",
-   "name":"Quách Thị Phương Anh",
-   "html":``,
-  },
-  {"id":"03",
-   "name":"Nguyễn Thị Quỳnh Anh",
-   "html":``,
-  },
-  {"id":"04",
-   "name":"Cảnh Thị Minh Ánh",
-   "html":``,
+   "img1":"https://i.imgur.com/s5fZOzm.jpg",
+   "img2":"https://i.imgur.com/qir0V1l.jpg",
   },
   {"id":"",
    "name":"",
-   "html":``,
+   "img1":"",
+   "img2":"",
   },
   {"id":"",
    "name":"",
-   "html":``,
+   "img1":"",
+   "img2":"",
+  },
+  {"id":"",
+   "name":"",
+   "img1":"",
+   "img2":"",
   },
 
 ]
@@ -31,7 +27,14 @@ for (let i=0; i<dataInner.length;i++){
   <tr>
       <td>${dataInner[i].id}</td>
       <td>${dataInner[i].name}</td>
-      <td>${dataInner[i].html}</td>
+      <td>
+        <a data-fancybox="gallery" href="#" data-caption="Bài làm của ${dataInner[i].name}">
+          <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name"/>
+        </a>
+        <a data-fancybox="gallery" href="#" data-caption="Bài làm của ${dataInner[i].name}">
+          <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name"/>
+        </a>
+      </td>
   </tr>
   `;
 }
