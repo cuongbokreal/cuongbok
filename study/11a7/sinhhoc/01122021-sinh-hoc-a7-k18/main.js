@@ -174,7 +174,6 @@ var dataInner = [
    "id":"28",
    "name":"Trần Đức Ngọc",
    "img1":"https://f8.photo.talk.zdn.vn/1183207892600515391/f9ca8007c7c00c9e55d1.jpg",
-   "img2":"//this404",
    },
    {
    "id":"29",
