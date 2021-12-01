@@ -279,8 +279,7 @@ var dataInner = [
    {
    "id":"45",
    "name":"Nguyễn Hữu Quang Tùng",
-   "img1":"",
-   "img2":"",
+   "img1":"https://i.imgur.com/tWHY6MT.jpg",
    },
    {
    "id":"46",
