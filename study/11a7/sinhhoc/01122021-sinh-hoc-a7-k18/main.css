@@ -1,5 +1,5 @@
 #innerData{boder:1px solid black}
-tr td img{max-height:70px;}
+.content img{max-height:70px;}
 .table-wrapper {
   padding:5px;
   display:block; 
@@ -37,7 +37,7 @@ tr td img{max-height:70px;}
 @media screen and (max-width: 640px){
   .table-wrapper:{position:relative; width:calc(100% + 40px);left:-20px;padding:0 20px; display:flex;overflow-x:scroll;overflow:scroll;}
   .table-wrapper:after{content:'';display:block;padding-left:20px}
-  .table-wrapper  thead ,td {min-width:12rem;padding:1rem;}
+  .table-wrapper  thead ,td {min-width:5rem;padding:3px;}
   #tableTop{min-width: fit-content;}
   .total{position:absolute; top:1rem; right:1rem;font-size:1rem;display:block}
   #navmobile{display:block}
