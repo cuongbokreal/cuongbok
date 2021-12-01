@@ -36,4 +36,7 @@ for (let i=0; i<dataInner.length;i++){
   `;
 }
 document.getElementById('innerData').innerHTML += innerTable;
+$(document).ready(function() {
+   $('.content a').fancybox();
+});
 console.log('get')
