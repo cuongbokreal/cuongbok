@@ -324,4 +324,4 @@ for (let i=0; i<dataInner.length;i++){
   innerTable += `</td></tr>`;
 }
 document.getElementById('innerData').innerHTML += innerTable;
-console.log(total)
+document.getElementById('total').innerText = ` ${total}/46`;
