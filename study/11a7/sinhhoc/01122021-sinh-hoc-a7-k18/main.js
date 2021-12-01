@@ -279,10 +279,17 @@ for (let i=0; i<dataInner.length;i++){
         </a>
         <a class="content" data-fancybox="gallery" href="${dataInner[i].img2}" data-caption="Bài làm của ${dataInner[i].name} - 2">
           <img src="${dataInner[i].img2}" alt="Bài làm của ${dataInner[i].name} - 2" title="Bài làm của ${dataInner[i].name} - 2"/>
-        </a>
-      </td>
-  </tr>
-  `;
+        </a>`;
+   if (dataInner[i].img3){innerTable += `
+         <a class="content" data-fancybox="gallery" href="${dataInner[i].img3}" data-caption="Bài làm của ${dataInner[i].name} - 3">
+          <img src="${dataInner[i].img3}" alt="Bài làm của ${dataInner[i].name} - 3" title="Bài làm của ${dataInner[i].name} - 3"/>
+         </a>`}
+   if (dataInner[i].img4){innerTable += `
+         <a class="content" data-fancybox="gallery" href="${dataInner[i].img4}" data-caption="Bài làm của ${dataInner[i].name} - 4">
+          <img src="${dataInner[i].img4}" alt="Bài làm của ${dataInner[i].name} - 4" title="Bài làm của ${dataInner[i].name} - 4"/>
+         </a>`}
+   
+  innerTable += `</td></tr>`;
 }
 document.getElementById('innerData').innerHTML += innerTable;
 console.log('get')
