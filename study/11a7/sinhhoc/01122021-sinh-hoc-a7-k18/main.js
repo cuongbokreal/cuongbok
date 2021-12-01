@@ -33,4 +33,5 @@ for (let i=0; i<dataInner.length;i++){
       <td>${dataInner[i].html}</td>
   `;
 }
-document.getElementById('innerData').innerHTML += innerTable
+document.getElementById('innerData').innerHTML += innerTable;
+console.log('get')
