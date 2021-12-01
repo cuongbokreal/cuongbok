@@ -189,8 +189,9 @@ var dataInner = [
    {
    "id":"31",
    "name":"Nguyễn Đình Quang",
-   "img1":"",
-   "img2":"",
+   "img1":"https://f22-zpc.zdn.vn/1430580936962572509/31abe93869fca2a2fbed.jpg",
+   "img2":"https://f20-zpc.zdn.vn/2705056401560035895/f495e40564c1af9ff6d0.jpg",
+   "img3":"https://f19-zpc.zdn.vn/8916980328069072062/30a9aac32b07e059b916.jpg",
    },
    {
    "id":"32",
