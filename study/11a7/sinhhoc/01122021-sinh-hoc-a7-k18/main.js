@@ -1,6 +1,8 @@
 $(document).ready(function() {
    $('.content').fancybox();
 });
+var lastUpdate = '12:29 01/12/2021';
+document.getElementById('lastUpdate').innerText += lastUpdate;
 var dataInner = [
   {"id":"01",
    "name":"Quách Duy An",
