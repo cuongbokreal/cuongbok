@@ -63,9 +63,9 @@ var dataInner = [
    "img2":"",
   },
   {"id":"13",
-   "name":"",
-   "img1":"",
-   "img2":"",
+   "name":"Đỗ Văn Hiếu",
+   "img1":"https://im4.ezgif.com/tmp/ezgif-4-56aa7a40bac6.jpg",
+   "img2":"https://im4.ezgif.com/tmp/ezgif-4-6d519d3b5313.jpg",
   },
   {
    "id":"14",
