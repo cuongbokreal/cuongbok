@@ -151,9 +151,9 @@ var dataInner = [
    },
    {
    "id":"26",
-   "name":"Nguyễn Minh",
-   "img1":"",
-   "img2":"",
+   "name":"Nguyễn Tất Minh",
+   "img1":"https://im4.ezgif.com/tmp/ezgif-4-919a688b9499.jpg",
+   "img2":"https://im4.ezgif.com/tmp/ezgif-4-3bc83d1d5324.jpg",
    },
    {
    "id":"27",
