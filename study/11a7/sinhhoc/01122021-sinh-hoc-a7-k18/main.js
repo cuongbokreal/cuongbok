@@ -233,8 +233,8 @@ var dataInner = [
    {
    "id":"38",
    "name":"Nguyễn Thị Anh Thư",
-   "img1":"https://f21-zpc.zdn.vn/589221064242247058/8220b3f157359c6bc524.jpg",
-   "img2":"",
+   "img1":"https://f10.photo.talk.zdn.vn/4682480630529923756/ef333192d35618084147.jpg",
+   "img2":"https://f17-zpc.zdn.vn/3895542912582941570/93d3fe761cb2d7ec8ea3.jpg",
    },
    {
    "id":"39",
