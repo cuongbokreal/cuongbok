@@ -35,7 +35,7 @@ for (let i=0; i<dataInner.length;i++){
           <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name}"/>
         </a>
         <a class="content" data-fancybox="gallery" href="#" data-caption="Bài làm của ${dataInner[i].name}">
-          <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name"/>
+          <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name}"/>
         </a>
       </td>
   </tr>
