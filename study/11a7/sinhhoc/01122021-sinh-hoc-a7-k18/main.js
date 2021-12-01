@@ -128,13 +128,15 @@ var dataInner = [
    },
    {
    "id":"23",
-   "name":"",
-   "img1":"",
-   "img2":"",
+   "name":"Ngô Thị Khánh Linh",
+   "img1":"https://im4.ezgif.com/tmp/ezgif-4-035da61188bb.jpg",
+   "img2":"https://im4.ezgif.com/tmp/ezgif-4-1631c89a3318.jpg",
+   "img3":"https://im4.ezgif.com/tmp/ezgif-4-befce449a2b5.jpg",
+   "img4":"https://im4.ezgif.com/tmp/ezgif-4-83797a4e8677.jpg",   
    },
    {
    "id":"24",
-   "name":"",
+   "name":"Nguyễn Thạc Quỳnh Mai",
    "img1":"",
    "img2":"",
    },
@@ -292,6 +294,10 @@ for (let i=0; i<dataInner.length;i++){
    if (dataInner[i].img4){innerTable += `
          <a class="content" data-fancybox="gallery" href="${dataInner[i].img4}" data-caption="Bài làm của ${dataInner[i].name} - 4">
           <img src="${dataInner[i].img4}" alt="Bài làm của ${dataInner[i].name} - 4" title="Bài làm của ${dataInner[i].name} - 4"/>
+         </a>`}
+   if (dataInner[i].img5){innerTable += `
+         <a class="content" data-fancybox="gallery" href="${dataInner[i].img5}" data-caption="Bài làm của ${dataInner[i].name} - 5">
+          <img src="${dataInner[i].img5}" alt="Bài làm của ${dataInner[i].name} - 5" title="Bài làm của ${dataInner[i].name} - 5"/>
          </a>`}
    
   innerTable += `</td></tr>`;
