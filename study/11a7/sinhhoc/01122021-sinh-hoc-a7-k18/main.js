@@ -71,8 +71,8 @@ var dataInner = [
   },
   {"id":"13",
    "name":"Đỗ Văn Hiếu",
-   "img1":"https://im4.ezgif.com/tmp/ezgif-4-56aa7a40bac6.jpg",
-   "img2":"https://im4.ezgif.com/tmp/ezgif-4-6d519d3b5313.jpg",
+   "img1":"https://i.imgur.com/rvki6ZS.jpg",
+   "img2":"https://i.imgur.com/gYpEJnh.jpg",
   },
   {
    "id":"14",
