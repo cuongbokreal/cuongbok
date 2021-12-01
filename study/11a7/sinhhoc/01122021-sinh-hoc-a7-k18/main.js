@@ -113,15 +113,15 @@ var dataInner = [
    {
    "id":"19",
    "name":"Đỗ Quang Huy",
-   "img1":"https://im4.ezgif.com/tmp/ezgif-4-e7c7d1e13cf5.jpg",
-   "img2":"https://im4.ezgif.com/tmp/ezgif-4-d808eabe3ee1.jpg",
+   "img1":"https://i.imgur.com/wjPkD2l.jpg",
+   "img2":"https://i.imgur.com/W8ZunOJ.jpg",
    },
    {
    "id":"20",
    "name":"Nguyễn Hưng",
-   "img1":"https://im4.ezgif.com/tmp/ezgif-4-51df74cc0093.jpg",
-   "img2":"https://im4.ezgif.com/tmp/ezgif-4-703b038d33eb.jpg",
-   "img3":"https://im4.ezgif.com/tmp/ezgif-4-4f0c92a62dad.jpg",
+   "img1":"https://i.imgur.com/tNckKAG.jpg",
+   "img2":"https://i.imgur.com/Qd6IlQF.jpg",
+   "img3":"https://i.imgur.com/NRRABWU.jpg",
    },
    {
    "id":"21",
