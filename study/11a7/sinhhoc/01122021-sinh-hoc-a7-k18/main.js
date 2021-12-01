@@ -292,7 +292,9 @@ var dataInner = [
 
 ]
 let innerTable = "";
+let total = 0;
 for (let i=0; i<dataInner.length;i++){
+   if(dataInner[i].img1.length > 0){total += 1}
   innerTable += `
   <tr>
       <td>${dataInner[i].id}</td>
@@ -322,4 +324,4 @@ for (let i=0; i<dataInner.length;i++){
   innerTable += `</td></tr>`;
 }
 document.getElementById('innerData').innerHTML += innerTable;
-console.log('get')
+console.log(total)
