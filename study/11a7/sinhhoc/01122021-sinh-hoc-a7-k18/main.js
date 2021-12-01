@@ -275,10 +275,10 @@ for (let i=0; i<dataInner.length;i++){
       <td>${dataInner[i].name}</td>
       <td>
         <a class="content" data-fancybox="gallery" href="${dataInner[i].img1}" data-caption="Bài làm của ${dataInner[i].name} - 1">
-          <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name} - 1"/>
+          <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name} - 1" title="Bài làm của ${dataInner[i].name} - 1"/>
         </a>
         <a class="content" data-fancybox="gallery" href="${dataInner[i].img2}" data-caption="Bài làm của ${dataInner[i].name} - 2">
-          <img src="${dataInner[i].img2}" alt="Bài làm của ${dataInner[i].name} - 2"/>
+          <img src="${dataInner[i].img2}" alt="Bài làm của ${dataInner[i].name} - 2" title="Bài làm của ${dataInner[i].name} - 2"/>
         </a>
       </td>
   </tr>
