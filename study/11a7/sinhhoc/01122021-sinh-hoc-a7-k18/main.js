@@ -218,8 +218,8 @@ var dataInner = [
    {
    "id":"36",
    "name":"Nguyễn Thanh Thảo",
-   "img1":"",
-   "img2":"",
+   "img1":"https://f18-zpc.zdn.vn/8304731949229443893/bec0e2bb5a7f9121c86e.jpg",
+   "img2":"https://f17-zpc.zdn.vn/3586414875700097129/90cf2cbd94795f270668.jpg",
    },
    {
    "id":"37",
