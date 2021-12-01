@@ -69,9 +69,9 @@ var dataInner = [
   },
   {
    "id":"14",
-   "name":"",
-   "img1":"",
-   "img2":"",
+   "name":"Nguyễn Thạc Trung Hiếu",
+   "img1":"https://f5.photo.talk.zdn.vn/7462192544288662522/cff2258dbc4977172e58.jpg",
+   "img2":"https://f3.photo.talk.zdn.vn/5369936897255761951/5d1bab8b324ff911a05e.jpg",
    },
    {
    "id":"15",
