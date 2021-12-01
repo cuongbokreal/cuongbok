@@ -1,1 +1,44 @@
 #innerData{boder:1px solid black}
+
+.table-wrapper {
+  padding:5px;
+  display:block; 
+  overflow-y:hidden;
+  overflow-x:auto;
+  scroll-behavior:initial;
+  table-layout: fixed;
+  width: 100%;
+  max-width:fit-content;
+  border:1px solid #e4e4e7;
+  border-collapse: collapse;
+}
+#tableTop{background-color: ;}
+.table-wrapper  tr:nth-child(2n+1) td{background-color:rgba(0,0,0,.025)}
+.table-wrapper th, td {
+  text-align: center;
+  padding: 10px 0;
+  padding:20px 25px; 
+  border:0.5px solid rgba(0,0,0,.1);
+  border-left-width:0;
+  border-top:0; 
+  vertical-align:middle;
+}
+.total{position:absolute; top:2rem; right:2rem;font-size:1rem;display:block}
+.doanhthu #tableTop th{min-width:16rem;padding-right:0rem;padding-left:0rem;}
+#navmobile{display:block; position:relative}
+.table-wrapper  thead ,td {
+  tetx-align:center;
+  padding:1rem 2rem 1rem 2rem;
+  max-width: fit-content;
+}
+.text-blue{
+    color: #54a0ff!important;
+}
+@media screen and (max-width: 640px){
+  .table-wrapper:{position:relative; width:calc(100% + 40px);left:-20px;padding:0 20px; display:flex;overflow-x:scroll;overflow:scroll;}
+  .table-wrapper:after{content:'';display:block;padding-left:20px}
+  .table-wrapper  thead ,td {min-width:12rem;padding:1rem;}
+  #tableTop{min-width: fit-content;}
+  .total{position:absolute; top:1rem; right:1rem;font-size:1rem;display:block}
+  #navmobile{display:block}
+}
