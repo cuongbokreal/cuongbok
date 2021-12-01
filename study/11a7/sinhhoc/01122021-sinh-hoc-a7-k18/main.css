@@ -30,7 +30,7 @@
 .table-wrapper  thead ,td {
   tetx-align:center;
   padding:1rem 2rem 1rem 2rem;
-  max-width: fit-content;
+  /*max-width: fit-content;*/
 }
 .text-blue{
     color: #54a0ff!important;
