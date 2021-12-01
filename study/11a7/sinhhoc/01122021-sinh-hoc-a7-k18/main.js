@@ -28,9 +28,11 @@ var dataInner = [
 let innerTable = "";
 for (let i=0; i<dataInner.length;i++){
   innerTable += `
-  <td>${dataInner[i].id}</td>
+  <tr>
+      <td>${dataInner[i].id}</td>
       <td>${dataInner[i].name}</td>
       <td>${dataInner[i].html}</td>
+  </tr>
   `;
 }
 document.getElementById('innerData').innerHTML += innerTable;
