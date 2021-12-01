@@ -1,5 +1,6 @@
 #innerData{boder:1px solid black}
 .content img{max-height:140px;}
+.mainImg{display: inline-flex;}
 .table-wrapper {
   padding:5px;
   display:block; 
