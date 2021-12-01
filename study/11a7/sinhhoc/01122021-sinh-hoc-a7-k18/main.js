@@ -75,9 +75,11 @@ var dataInner = [
    },
    {
    "id":"15",
-   "name":"",
-   "img1":"",
-   "img2":"",
+   "name":"Nguyễn Văn Hiếu",
+   "img1":"https://im4.ezgif.com/tmp/ezgif-4-08d5fb8fedda.jpg",
+   "img2":"https://im4.ezgif.com/tmp/ezgif-4-084f442fc2ab.jpg",
+   "img3":"https://im4.ezgif.com/tmp/ezgif-4-d6d6ee2dbfc1.jpg",
+   "img4":"https://im4.ezgif.com/tmp/ezgif-4-71d26b1b8aee.jpg",   
    },
    {
    "id":"16",
