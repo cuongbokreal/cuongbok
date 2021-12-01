@@ -1,3 +1,6 @@
+$(document).ready(function() {
+   $('.content').fancybox();
+});
 var dataInner = [
   {"id":"01",
    "name":"Quách Duy An",
@@ -28,10 +31,10 @@ for (let i=0; i<dataInner.length;i++){
       <td>${dataInner[i].id}</td>
       <td>${dataInner[i].name}</td>
       <td>
-        <a data-fancybox="gallery" href="#" data-caption="Bài làm của ${dataInner[i].name}">
-          <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name"/>
+        <a class="content" data-fancybox="gallery" href="#" data-caption="Bài làm của ${dataInner[i].name}">
+          <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name}"/>
         </a>
-        <a data-fancybox="gallery" href="#" data-caption="Bài làm của ${dataInner[i].name}">
+        <a class="content" data-fancybox="gallery" href="#" data-caption="Bài làm của ${dataInner[i].name}">
           <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name"/>
         </a>
       </td>
@@ -39,7 +42,4 @@ for (let i=0; i<dataInner.length;i++){
   `;
 }
 document.getElementById('innerData').innerHTML += innerTable;
-$(document).ready(function() {
-   $('.content a').fancybox();
-});
 console.log('get')
