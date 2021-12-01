@@ -241,9 +241,9 @@ var dataInner = [
    {
    "id":"39",
    "name":"Lê Thị Thanh Trà",
-   "img1":"https://im4.ezgif.com/tmp/ezgif-4-8f8dd55488ee.jpg",
-   "img2":"https://im4.ezgif.com/tmp/ezgif-4-c6c8e6910f9b.jpg",
-   "img3":"https://im4.ezgif.com/tmp/ezgif-4-a964781f7418.jpg",   
+   "img1":"https://i.imgur.com/oV4VZHA.jpg",
+   "img2":"https://i.imgur.com/OMLAHVk.jpg",
+   "img3":"https://i.imgur.com/RBhL8Vm.jpg",   
    },
    {
    "id":"40",
