@@ -26,7 +26,7 @@ var dataInner = [
 
 ]
 let innerTable = "";
-for (let i=0; i<innerData.length;i++){
+for (let i=0; i<dataInner.length;i++){
   innerTable += `
   <td>${dataInner[i].dd}</td>
       <td>${dataInner[i].c3}</td>
