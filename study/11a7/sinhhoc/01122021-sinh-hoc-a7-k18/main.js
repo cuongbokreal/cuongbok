@@ -184,8 +184,8 @@ var dataInner = [
    {
    "id":"30",
    "name":"Nguyễn Đình Phong",
-   "img1":"",
-   "img2":"",
+   "img1":"https://i.imgur.com/SIYD1Pc.jpg",
+   "img2":"https://i.imgur.com/jIBygoU.jpg",
    },
    {
    "id":"31",
