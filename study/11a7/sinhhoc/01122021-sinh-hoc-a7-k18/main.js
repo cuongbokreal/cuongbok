@@ -278,8 +278,10 @@ var dataInner = [
    {
    "id":"46",
    "name":"Nguyễn Công Đạt",
-   "img1":"",
-   "img2":"",
+   "img1":"https://i.imgur.com/FjJVdeq.png",
+   "img2":"https://i.imgur.com/9IrAidi.png",
+   "img3":"https://i.imgur.com/5MVqV7a.png",
+   "img4":"https://i.imgur.com/CgKbwxQ.png",   
    }, 
 
 ]
