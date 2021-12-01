@@ -146,11 +146,11 @@ var dataInner = [
    {
    "id":"24",
    "name":"Nguyễn Thạc Quỳnh Mai",
-   "img1":"https://f3.photo.talk.zdn.vn/5565617936431921686/5415fdf304c9cf9796d8.jpg",
-   "img2":"https://f8.photo.talk.zdn.vn/4051201354176309744/20f0bae94cd3878ddec2.jpg",
-   "img3":"https://f8.photo.talk.zdn.vn/1573501622545501722/0f99711f86254d7b1434.jpg",
-   "img4":"https://f21-zpc.zdn.vn/8405369058727146323/3eac37a4c09e0bc0528f.jpg",
-   "img5":"https://f21-zpc.zdn.vn/6169279107491899722/bdd0da612e5be505bc4a.jpg",   
+   "img1":"https://i.imgur.com/xqmYWZv.jpg",
+   "img2":"https://i.imgur.com/P4XTW2r.jpg",
+   "img3":"https://i.imgur.com/az7j9JE.jpg",
+   "img4":"https://i.imgur.com/HJVtjKb.jpg",
+   "img5":"https://i.imgur.com/sGrC1Uz.jpg",   
    },
    {
    "id":"25",
