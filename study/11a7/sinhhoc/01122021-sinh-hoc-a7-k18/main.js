@@ -83,9 +83,10 @@ var dataInner = [
    },
    {
    "id":"16",
-   "name":"",
-   "img1":"",
-   "img2":"",
+   "name":"Đàm Xuân Hoàng",
+   "img1":"https://im4.ezgif.com/tmp/ezgif-4-cf8882570d5d.jpg",
+   "img2":"https://im4.ezgif.com/tmp/ezgif-4-f2b7b3bd10a6.jpg",
+   "img3":"https://im4.ezgif.com/tmp/ezgif-4-f8c92a226d5e.jpg",   
    },
    {
    "id":"17",
