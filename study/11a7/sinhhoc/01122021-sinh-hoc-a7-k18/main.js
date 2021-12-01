@@ -298,23 +298,23 @@ for (let i=0; i<dataInner.length;i++){
       <td>${dataInner[i].id}</td>
       <td>${dataInner[i].name}</td>
       <td class="mainImg">
-        <a class="content" data-fancybox="gallery" href="${dataInner[i].img1}" data-caption="Bài làm của ${dataInner[i].name} - 1">
-          <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name} - 1" title="Bài làm của ${dataInner[i].name} - 1"/>
+        <a class="content" data-fancybox="gallery" href="${dataInner[i].img1}" data-caption="Bài làm của ${dataInner[i].id}.${dataInner[i].name} - 1">
+          <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name} - 1" title="Bài làm của ${dataInner[i].id}.${dataInner[i].name} - 1"/>
         </a>
-        <a class="content" data-fancybox="gallery" href="${dataInner[i].img2}" data-caption="Bài làm của ${dataInner[i].name} - 2">
-          <img src="${dataInner[i].img2}" alt="Bài làm của ${dataInner[i].name} - 2" title="Bài làm của ${dataInner[i].name} - 2"/>
+        <a class="content" data-fancybox="gallery" href="${dataInner[i].img2}" data-caption="Bài làm của ${dataInner[i].id}.${dataInner[i].name} - 2">
+          <img src="${dataInner[i].img2}" alt="Bài làm của ${dataInner[i].name} - 2" title="Bài làm của ${dataInner[i].id}.${dataInner[i].name} - 2"/>
         </a>`;
    if (dataInner[i].img3){innerTable += `
-         <a class="content" data-fancybox="gallery" href="${dataInner[i].img3}" data-caption="Bài làm của ${dataInner[i].name} - 3">
-          <img src="${dataInner[i].img3}" alt="Bài làm của ${dataInner[i].name} - 3" title="Bài làm của ${dataInner[i].name} - 3"/>
+         <a class="content" data-fancybox="gallery" href="${dataInner[i].img3}" data-caption="Bài làm của ${dataInner[i].id}.${dataInner[i].name} - 3">
+          <img src="${dataInner[i].img3}" alt="Bài làm của ${dataInner[i].name} - 3" title="Bài làm của ${dataInner[i].id}.${dataInner[i].name} - 3"/>
          </a>`}
    if (dataInner[i].img4){innerTable += `
-         <a class="content" data-fancybox="gallery" href="${dataInner[i].img4}" data-caption="Bài làm của ${dataInner[i].name} - 4">
-          <img src="${dataInner[i].img4}" alt="Bài làm của ${dataInner[i].name} - 4" title="Bài làm của ${dataInner[i].name} - 4"/>
+         <a class="content" data-fancybox="gallery" href="${dataInner[i].img4}" data-caption="Bài làm của ${dataInner[i].id}.${dataInner[i].name} - 4">
+          <img src="${dataInner[i].img4}" alt="Bài làm của ${dataInner[i].name} - 4" title="Bài làm của ${dataInner[i].id}.${dataInner[i].name} - 4"/>
          </a>`}
    if (dataInner[i].img5){innerTable += `
-         <a class="content" data-fancybox="gallery" href="${dataInner[i].img5}" data-caption="Bài làm của ${dataInner[i].name} - 5">
-          <img src="${dataInner[i].img5}" alt="Bài làm của ${dataInner[i].name} - 5" title="Bài làm của ${dataInner[i].name} - 5"/>
+         <a class="content" data-fancybox="gallery" href="${dataInner[i].img5}" data-caption="Bài làm của ${dataInner[i].id}.${dataInner[i].name} - 5">
+          <img src="${dataInner[i].img5}" alt="Bài làm của ${dataInner[i].name} - 5" title="Bài làm của ${dataInner[i].id}.${dataInner[i].name} - 5"/>
          </a>`}
    
   innerTable += `</td></tr>`;
