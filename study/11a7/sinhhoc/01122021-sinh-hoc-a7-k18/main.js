@@ -273,7 +273,7 @@ for (let i=0; i<dataInner.length;i++){
   <tr>
       <td>${dataInner[i].id}</td>
       <td>${dataInner[i].name}</td>
-      <td>
+      <td class="mainImg">
         <a class="content" data-fancybox="gallery" href="${dataInner[i].img1}" data-caption="Bài làm của ${dataInner[i].name} - 1">
           <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name} - 1" title="Bài làm của ${dataInner[i].name} - 1"/>
         </a>
