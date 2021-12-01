@@ -1,6 +1,6 @@
 #innerData{boder:1px solid black}
 .content img{max-height:140px;}
-.mainImg{display: inline-table;width: 100%;}
+.mainImg{display: inline-table;width: 100%;border: 1px solid #c5c5c5;}
 .table-wrapper {
   padding:5px;
   display:block; 
