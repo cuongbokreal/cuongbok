@@ -60,7 +60,7 @@ var dataInner = [
    "img2":"https://i.imgur.com/q65sW6f.png",
   },
   {"id":"12",
-   "name":"",
+   "name":"Nguyễn Ngọc Hiệp",
    "img1":"",
    "img2":"",
   },
