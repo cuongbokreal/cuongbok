@@ -155,8 +155,8 @@ var dataInner = [
    {
    "id":"25",
    "name":"Nguyễn Quang Minh",
-   "img1":"",
-   "img2":"",
+   "img1":"https://f7.photo.talk.zdn.vn/8681067276183078668/a31ac2cfc7080c565519.jpg",
+   "img2":"https://f3.photo.talk.zdn.vn/1475464847382608554/9c3f95ae90695b370278.jpg",
    },
    {
    "id":"26",
