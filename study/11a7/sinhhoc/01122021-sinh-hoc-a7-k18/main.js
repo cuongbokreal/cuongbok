@@ -1,7 +1,7 @@
 $(document).ready(function() {
    $('.content').fancybox();
 });
-var lastUpdate = ' 12:31 01/12/2021';
+var lastUpdate = ' 10:31 01/12/2021';
 document.getElementById('lastUpdate').innerText += lastUpdate;
 var dataInner = [
   {"id":"01",
