@@ -103,8 +103,10 @@ var dataInner = [
    {
    "id":"18",
    "name":"Nguyễn Thế Học",
-   "img1":"",
-   "img2":"",
+   "img1":"https://im2.ezgif.com/tmp/ezgif-2-e873167131d2.jpg",
+   "img2":"https://im2.ezgif.com/tmp/ezgif-2-694d8981140f.jpg",
+   "img3":"https://im2.ezgif.com/tmp/ezgif-2-e3d02c2b584b.jpg",
+   "img4":"https://im2.ezgif.com/tmp/ezgif-2-561718ca9872.jpg",   
    },
    {
    "id":"19",
