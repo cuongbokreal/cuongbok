@@ -31,10 +31,10 @@ for (let i=0; i<dataInner.length;i++){
       <td>${dataInner[i].id}</td>
       <td>${dataInner[i].name}</td>
       <td>
-        <a class="content" data-fancybox="gallery" href="#" data-caption="Bài làm của ${dataInner[i].name}">
+        <a class="content" data-fancybox="gallery" href="#${dataInner[i].id}-1" data-caption="Bài làm của ${dataInner[i].name}">
           <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name}"/>
         </a>
-        <a class="content" data-fancybox="gallery" href="#" data-caption="Bài làm của ${dataInner[i].name}">
+        <a class="content" data-fancybox="gallery" href="#${dataInner[i].id}-2" data-caption="Bài làm của ${dataInner[i].name}">
           <img src="${dataInner[i].img1}" alt="Bài làm của ${dataInner[i].name}"/>
         </a>
       </td>
