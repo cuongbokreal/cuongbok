@@ -131,7 +131,11 @@ def xuly(M, N): #function xuly với 2 tham số là M, N
         for i in range(N, M+1):
             if i % 3 == 0 or i % 5 == 0:
                 listNumber.append(i) #mỗi lần thỏa mãn, thêm vào biến listNumber giá trị i ["i","i+n"]
+        details = ""
+        for i in listNumber:
+            details += f'{i},'
         print('Trong khoảng từ', N, 'đến', M, 'có:', len(listNumber), 'số chia hết cho 3 hoặc 5.') #len: độ dài 
+        print(f'Là các số:{details}')
 def getInput(): #function getInput để lấy dữ liệu từ bàn phím
     N = int(input('Nhập N='))
     M = int(input('Nhập M= (M>N)'))
