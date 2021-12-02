@@ -157,7 +157,7 @@ getInput()#chạy chương trình getInput() để bắt đầu.
   </div>
   </div>
 </div>
-  <a id="openTestCode" onclick="test_code(open)" href="#test_code">Thử code này</a>
+  <a id="openTestCode" onclick="open_test_code()" href="#test_code">Thử code này</a>
 <div id="test_code">
   <h4>Thử code:</h4>
 <iframe id="frame_code" src="https://www.online-python.com/OcP8wGUZ2j">  </iframe>
@@ -174,18 +174,17 @@ getInput()#chạy chương trình getInput() để bắt đầu.
 <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js'></script>
 <script>
-  function test_code(n){
-    var openTestCode = document.getElementById('openTestCode');
-    var test_code_div = document.getElementById('test_code');
-    if (n = 'open'){
+  var openTestCode = document.getElementById('openTestCode');
+  var test_code_div = document.getElementById('test_code');
+  function open_test_code(){
       test_code_div.style.display = 'block';
       openTestCode.innerHTML = 'Đóng trình thử mã';
-      openTestCode.setAttribute("onclick", "test_code(close)");
+      openTestCode.setAttribute("onclick", "close_test_code()");
     }
-    if (n = 'close'){
+   function close_test_code(){
       test_code_div.style.display = 'none';
       openTestCode.innerHTML = 'Thử mã này';
-      openTestCode.setAttribute("onclick", "test_code(open)");
+      openTestCode.setAttribute("onclick", "open_test_code()");
     }
   }
   
