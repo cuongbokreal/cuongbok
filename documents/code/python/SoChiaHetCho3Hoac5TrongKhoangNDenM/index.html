@@ -107,6 +107,8 @@ body, html {
     width: 100%;
   }
 }
+#test_code{display:none}
+#frame_code{height: 600px;width: 100%;}
 </style>
 </head>
 <body translate="no" >
@@ -155,7 +157,11 @@ getInput()#chạy chương trình getInput() để bắt đầu.
   </div>
   </div>
 </div>
-
+  <a id="openTestCode" onclick="test_code(open)" href="#test_code">Thử code này</a>
+<div id="test_code">
+  <h4>Thử code:</h4>
+<iframe id="frame_code" src="https://www.online-python.com/OcP8wGUZ2j"/>  
+</div>
 <div class="credit">
   <p><a href="//cuongbokit.blogspot.com" target="_blank">2021 by NSND Cuongbok</a></p>
   <p>Hỗ trợ bởi: <a href="https://stripe.com/docs/api#create_charge" target="_blank">incredible documentation</a></p>
@@ -168,6 +174,21 @@ getInput()#chạy chương trình getInput() để bắt đầu.
 <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/javascript.min.js'></script>
 <script>
+  function test_code(n){
+    var openTestCode = document.getElementById('openTestCode');
+    var test_code_div = document.getElementById('test_code');
+    if (n = 'open'){
+      test_code_div.style.display = 'block';
+      openTestCode.innerHTML = 'Đóng trình thử mã';
+      openTestCode.setAttribute("onclick", "test_code(close)");
+    }
+    if (n = 'close'){
+      test_code_div.style.display = 'none';
+      openTestCode.innerHTML = 'Thử mã này';
+      openTestCode.setAttribute("onclick", "test_code(open)");
+    }
+  }
+  
 hljs.initHighlightingOnLoad();
 
 const scrollView = document.querySelector('.Container .Contents');
