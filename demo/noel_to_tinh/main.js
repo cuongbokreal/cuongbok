@@ -23,6 +23,7 @@ function randomInt(min, max) {
 		return Math.floor(Math.random() * (max - min + 1) + min);
 	};
 
+var yes = document.getElementById('yes');
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = window.location.search.substring(1),
         sURLVariables = sPageURL.split('&'),
@@ -37,4 +38,7 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
     }
 };
+  var link = getUrlParameter('link');
+if(typeof link == 'undefined'){console.log('Loi!')}
+else{yes.href = link}
 
