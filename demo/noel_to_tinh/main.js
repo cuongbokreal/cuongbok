@@ -39,6 +39,6 @@ var getUrlParameter = function getUrlParameter(sParam) {
     }
 };
   var link = getUrlParameter('link');
-if(typeof link == 'undefined'){console.log('Loi!')}
-else{yes.href = link}
+if(typeof link != 'undefined' && link.match(/\/\//g) ){yes.href = link}
+else{console.log('Loi!')}
 
