@@ -23,7 +23,7 @@ function xocDia(){
 	lichSuQuay += 1 ;
 	setTimeout(function(){
 		clearInterval(intervalXocDia);
-		innerThbao.innerHTML = `Kết quả là: ${thbaoText}`;
+		innerThbao.innerHTML = `Kết quả lần ${lichSuQuay} là: ${thbaoText}`;
 		innerLichSuQuay.innerHTML += `Lần ${lichSuQuay}: ${thbaoText} ${updateTime.toLocaleString()} <br/>`;
 	}, 3000);
 	
