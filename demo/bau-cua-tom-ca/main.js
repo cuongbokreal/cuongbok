@@ -52,3 +52,8 @@ function xulyXocDia(){
 	console.log(`Random3: ${random3}`);
 		thbaoText = `<b>${listTen[randomKetQua]}</b>, <b>${listTen[random2]}</b>, <b>${listTen[random3]}</b>.`;
 }
+
+window.onbeforeunload = confirmExit;
+function confirmExit(){
+return "Mọi kết quả sẽ không được lưu?";
+}
