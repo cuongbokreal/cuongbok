@@ -14,12 +14,17 @@ var listKetQua = [bau,ca,cua,ga,nai,tom];
 var listTen = ["Bầu","Cá","Cua","Gà","Nai","Tôm"];
 var randomKetQua = Math.floor(Math.random() * listKetQua.length);
 var thbaoText = "";
+
 var listFix = [0,1,2];
 var randomFix = 0;
 
+var listInterval = [80,90,100,110,120,130];
+var randomInterval = 0;
+
 function xocDia(){
 	lichSuQuay += 1 ;
-	var intervalXocDia = setInterval(xulyXocDia, 100);
+	randomInterval = listInterval[Math.floor(Math.random() * listInterval.length)];
+	var intervalXocDia = setInterval(xulyXocDia, randomInterval);
 	var updateTime = new Date(); //updateTime
 	
 	innerThbao.innerHTML = `Đang quay lần ${lichSuQuay}. . .`;
