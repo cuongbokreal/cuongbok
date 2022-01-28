@@ -18,9 +18,11 @@ var listFix = [0,1,2];
 var randomFix = 0;
 
 function xocDia(){
+	lichSuQuay += 1 ;
 	var intervalXocDia = setInterval(xulyXocDia, 100);
 	var updateTime = new Date(); //updateTime
-	lichSuQuay += 1 ;
+	
+	innerThbao.innerHTML = `Đang quay lần ${lichSuQuay}. . .`;
 	setTimeout(function(){
 		clearInterval(intervalXocDia);
 		innerThbao.innerHTML = `Kết quả lần ${lichSuQuay} là: ${thbaoText}`;
