@@ -64,3 +64,4 @@ window.onbeforeunload = confirmExit;
 function confirmExit(){
 return "Mọi kết quả sẽ không được lưu?";
 }
+
