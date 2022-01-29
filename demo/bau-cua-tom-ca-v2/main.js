@@ -15,7 +15,7 @@ var listTen = ["Bầu","Cá","Cua","Gà","Nai","Tôm"];
 var randomKetQua = Math.floor(Math.random() * listKetQua.length);
 var thbaoText = "";
 
-var listFix = [0,1,2,3];
+var listFix = [0,1,2];
 var randomFix = 0;
 
 var listInterval = [80,90,100,110,120,130];
