@@ -189,6 +189,6 @@ a
 #heart
 {
     animation-name: heart;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
