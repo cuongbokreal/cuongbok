@@ -1,0 +1,73 @@
+t = int(input('Nhập số truy vấn t:'))
+listVienGach = []
+for i in range(t):
+    n = int(input(f'Nhập số viên gạch lần {i+1}:'))
+    listVienGach.append(n)
+listCanhHCN = []
+
+def getCanhHCN(c): 
+    listCanhHCNChild = []
+    lisDuCanhHCN = []    
+    for a in range(1,len(getNguyenTo(c))):
+        canh1 = int(getNguyenTo(c)[a-1])
+        canh2 = int(getNguyenTo(c)[a])
+        if c - canh1*canh2 <0:
+            break
+        lisDuCanhHCN.append(c - canh1*canh2)
+        listCanhHCNChild.append([canh1, canh2])
+        minDuCanhHCN = min(lisDuCanhHCN)
+    return listCanhHCNChild[lisDuCanhHCN.index(minDuCanhHCN)]
+
+def getNguyenTo(c):
+    listNguyenTo = []
+    if c < 2:
+        return False
+    if c == 2:
+        listNguyenTo.append(2)
+    if c >= 3:
+        listNguyenTo.append(2)
+        listNguyenTo.append(3)
+    if c > 2:
+        for i in range(2,c):
+            for a in range(2, i):
+                if i%a == 0 or i%3 == 0:
+                    break
+                if i%5==0 and i!=5:
+                    break
+                if i%7==0 and i!=7:
+                    break
+                if i%a != 0 and i%(a+2) != 0 and i%(a+3) != 0 and i%(a+5) != 0:
+                    listNguyenTo.append(i)
+                    break
+    return listNguyenTo
+
+for i in range(len(listVienGach)):
+    listCanhHCN.append(getCanhHCN(listVienGach[i]))
+
+for i in range(len(listCanhHCN)):
+    duGach = int(listVienGach[i]) - (int(listCanhHCN[i][0])*int(listCanhHCN[i][1]))
+    print(f'n={listVienGach[i]} chọn {listCanhHCN[i][0]}x{listCanhHCN[i][1]} dư {duGach}')
+
+
+
+
+
+
+
+
+
+
+'''
+#c: number số viên gạch listVienGach[i]
+def getCanhHCN(c): 
+    for a in range(1,len(getNguyenTo(c))):
+        listCanhHCNChild = []
+        lisDuCanhHCN = []
+        canh1 = int(getNguyenTo(c)[a-1])
+        canh2 = int(getNguyenTo(c)[a])
+        if (canh1 * canh2) < c:
+            lisDuCanhHCN.append(c - canh1*canh2)
+            listCanhHCNChild.append([canh1, canh2])
+        #min = lisDuCanhHCN.index(min(lisDuCanhHCN))
+    return listCanhHCNChild[lisDuCanhHCN.index(min(lisDuCanhHCN))]
+'''
