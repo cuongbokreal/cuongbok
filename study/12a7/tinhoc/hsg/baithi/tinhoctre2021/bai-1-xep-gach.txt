@@ -1,6 +1,7 @@
 #Bài 1 Đề tin học trẻ toàn quốc - sơ khảo quốc gia THPT 2021 bảng C by Cuongbok depchai vcl
-WEB: https://cuongbokit.blogspot.com/
-Tiktok: Cuongbokreal
+#link đề: https://drive.google.com/drive/folders/1CzCSiTl4mEAx82g6xHQyo-2w2ZMcLKLa
+#WEB: https://cuongbokit.blogspot.com/
+#Tiktok: Cuongbokreal
 
 t = int(input('Nhập số truy vấn t:'))
 listVienGach = []
